@@ -6,6 +6,12 @@
     "leaf": true
   },
   {
+    "text": "Form Fields",
+    "iconCls": "fa fa-file-alt",
+    "xtype": "formFieldsview",
+    "leaf": true
+  },
+  {
     "text": "Vertical scrolling",
     "xtype": "BufferedRendererView",
     "iconCls": "fa fa-toilet-paper",
