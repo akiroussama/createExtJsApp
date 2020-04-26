@@ -1,28 +1,31 @@
-Ext.define("TopTenExtJsGridFeaturesClassic.view.grid.RowEditingView", {
+Ext.define("CreateExtJsApp.view.grid.RowEditingView", {
   extend: "Ext.grid.Panel",
   xtype: "RowEditingView",
   plugins: {
     rowediting: {
-        clicksToMoveEditor: 1,
-        autoCancel: false
+      clicksToMoveEditor: 1,
+      autoCancel: false
     }
   },
   store: { data: Data.getData() },
   columns: [
-    { text: 'employeeNo', dataIndex: 'employeeNo'},
-    { text: 'forename', dataIndex: 'forename',
+    { text: 'employeeNo', dataIndex: 'employeeNo' },
+    {
+      text: 'forename', dataIndex: 'forename',
       editor: {
         // defaults to textfield if no xtype is supplied
         allowBlank: false
       }
     },
-    { text: 'surname', dataIndex: 'surname',
+    {
+      text: 'surname', dataIndex: 'surname',
       editor: {
         xtype: 'textfield',
         allowBlank: false
       }
     },
-    { text: 'joinDate', dataIndex: 'joinDate', xtype: 'datecolumn', width: 150,
+    {
+      text: 'joinDate', dataIndex: 'joinDate', xtype: 'datecolumn', width: 150,
       editor: {
         xtype: 'datefield',
         allowBlank: false,

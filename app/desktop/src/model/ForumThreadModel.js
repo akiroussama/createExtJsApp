@@ -1,4 +1,4 @@
-Ext.define('TopTenExtJsGridFeaturesClassic.model.ForumThreadModel', {
+Ext.define('CreateExtJsApp.model.ForumThreadModel', {
     extend: 'Ext.data.Model',
     fields: [
         {

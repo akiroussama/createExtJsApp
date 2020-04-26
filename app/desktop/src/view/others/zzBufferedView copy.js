@@ -1,4 +1,4 @@
-Ext.define("TopTenExtJsGridFeaturesClassic.view.grid.BufferedViewCopy", {
+Ext.define("CreateExtJsApp.view.grid.BufferedViewCopy", {
     extend: "Ext.panel.Panel",
     title: "Buffered",
     margin: "0 0 0 0",

@@ -1,4 +1,4 @@
-Ext.define("TopTenExtJsGridFeaturesClassic.view.main.center.CenterView", {
+Ext.define("CreateExtJsApp.view.main.center.CenterView", {
 	extend: 'Ext.Container',
 	xtype: 'centerview',
 	cls: 'centerview',

@@ -1,4 +1,4 @@
-Ext.define("TopTenExtJsGridFeaturesClassic.view.main.nav.ViewViewModel", {
+Ext.define("CreateExtJsApp.view.main.nav.ViewViewModel", {
 	extend: "Ext.app.ViewModel",
 	alias: "viewmodel.navviewmodel",
 

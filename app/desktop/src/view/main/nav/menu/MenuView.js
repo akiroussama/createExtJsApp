@@ -1,4 +1,4 @@
-Ext.define("TopTenExtJsGridFeaturesClassic.view.nav.menu.MenuView", {
+Ext.define("CreateExtJsApp.view.nav.menu.MenuView", {
 	extend: 'Ext.list.Tree',
 	requires: [
 		'Ext.data.TreeStore',

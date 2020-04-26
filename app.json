@@ -1,6 +1,6 @@
 {
-  "name": "TopTenExtJsGridFeaturesClassic",
-  "namespace": "TopTenExtJsGridFeaturesClassic",
+  "name": "CreateExtJsApp",
+  "namespace": "CreateExtJsApp",
   "version": "1.0.0.0",
   "framework": "ext",
   "template": "classicdesktop",
@@ -27,7 +27,7 @@
   "overrides": ["app/shared/overrides","app/${build.id}/overrides"],
 
   "sass": {
-    "namespace": "TopTenExtJsGridFeaturesClassic",
+    "namespace": "CreateExtJsApp",
     "etc": [
       "sass/etc/all.scss"
     ],

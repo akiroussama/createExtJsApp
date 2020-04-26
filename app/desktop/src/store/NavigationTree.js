@@ -1,4 +1,4 @@
-Ext.define("TopTenExtJsGridFeaturesClassic.store.NavigationTree", {
+Ext.define("CreateExtJsApp.store.NavigationTree", {
     extend: "Ext.data.TreeStore",
 
     storeId: "NavigationTree",

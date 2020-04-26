@@ -1,7 +1,7 @@
-Ext.define("TopTenExtJsGridFeaturesClassic.store.UsersStore", {
+Ext.define("CreateExtJsApp.store.UsersStore", {
     extend: "Ext.data.Store",
     storeId: "UsersStore",
-    //model: 'TopTenExtJsGridFeaturesClassic.model.UserModel',
+    //model: 'CreateExtJsApp.model.UserModel',
     // data: [
     // 	{ name: 'Lisa', email: 'lisa@simpsons.com', phone: '555-111-1224' },
     // 	{ name: 'Bart', email: 'bart@simpsons.com', phone: '555-222-1234' },

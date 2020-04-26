@@ -1,11 +1,11 @@
-Ext.define("TopTenExtJsGridFeaturesClassic.view.grid.SalespersonSalesView", {
+Ext.define("CreateExtJsApp.view.grid.SalespersonSalesView", {
     extend: "Ext.grid.Panel",
     xtype: 'SalespersonSalesView',
     title: "Salesperson Sales Grid",
-    requires: ["TopTenExtJsGridFeaturesClassic.store.SalespersonSalesStore"],
+    requires: ["CreateExtJsApp.store.SalespersonSalesStore"],
     store: { type: "SalespersonSalesStore" },
     //store: Ext.data.StoreManager.lookup('SalespersonSalesStore'),
-    //store: Ext.create('TopTenExtJsGridFeaturesClassic.store.SalespersonSalesStore',{}),
+    //store: Ext.create('CreateExtJsApp.store.SalespersonSalesStore',{}),
 
     columns: [
         {

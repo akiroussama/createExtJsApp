@@ -1,4 +1,4 @@
-Ext.define("TopTenExtJsGridFeaturesClassic.view.grid.BufferedRendererView", {
+Ext.define("CreateExtJsApp.view.grid.BufferedRendererView", {
     extend: "Ext.panel.Panel",
     xtype: 'BufferedRendererView',
     margin: "0 0 0 0",
@@ -6,7 +6,7 @@ Ext.define("TopTenExtJsGridFeaturesClassic.view.grid.BufferedRendererView", {
     data: null,
     numRecords: null,
     // requires: [
-    //     "TopTenExtJsGridFeaturesClassic.store.BufferedStore",
+    //     "CreateExtJsApp.store.BufferedStore",
     // ],
 
     dockedItems: [
@@ -23,7 +23,7 @@ Ext.define("TopTenExtJsGridFeaturesClassic.view.grid.BufferedRendererView", {
                 //     var load = panel.down('#load');
                 //     panel.data = Data.data;
                 //     panel.numRecords = Data.numRecords;
-                //     var store = Ext.create('TopTenExtJsGridFeaturesClassic.store.BufferedStore',{})
+                //     var store = Ext.create('CreateExtJsApp.store.BufferedStore',{})
                 //     var numRecords = store.totalCount;
                 //     console.log(numRecords)
 
@@ -102,7 +102,7 @@ Ext.define("TopTenExtJsGridFeaturesClassic.view.grid.BufferedRendererView", {
             //bufferedRenderer: bufferedSetting,
             //store: { type: `${this.testname}-store` },
             store: Ext.create(
-                "TopTenExtJsGridFeaturesClassic.store.BufferedStore",
+                "CreateExtJsApp.store.BufferedStore",
                 {}
             ),
             //store: 'BufferedStore',

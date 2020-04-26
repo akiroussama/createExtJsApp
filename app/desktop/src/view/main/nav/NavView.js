@@ -1,4 +1,4 @@
-//Ext.define("TopTenExtJsGridFeaturesClassic.view.main.nav.NavView', {
+//Ext.define("CreateExtJsApp.view.main.nav.NavView', {
 //	extend: 'Ext.Panel',
 //	xtype: 'navview',
 //	cls: 'navview',
@@ -16,7 +16,7 @@ hiding that from the rest of the app -- we only want code to be aware of NavView
 about the underlying components within it. We could write the rest of the app to select and listen
 directly to the tree list, but in a complex app that kind of poor scoping can lead to problems.
 */
-Ext.define("TopTenExtJsGridFeaturesClassic.view.main.nav.NavView", {
+Ext.define("CreateExtJsApp.view.main.nav.NavView", {
     extend: "Ext.Panel",
     xtype: "navview",
     controller: "navviewcontroller",

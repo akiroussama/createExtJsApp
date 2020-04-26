@@ -1,7 +1,7 @@
-Ext.define("TopTenExtJsGridFeaturesClassic.Application", {
+Ext.define("CreateExtJsApp.Application", {
   extend: 'Ext.app.Application',
-  name: 'TopTenExtJsGridFeaturesClassic',
-  requires: ['TopTenExtJsGridFeaturesClassic.*'],
+  name: 'CreateExtJsApp',
+  requires: ['CreateExtJsApp.*'],
   defaultToken: 'homeview',
 
   launch: function () {

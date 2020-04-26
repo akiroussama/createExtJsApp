@@ -1,4 +1,4 @@
-Ext.define("TopTenExtJsGridFeaturesClassic.view.grid.DataExporterView", {
+Ext.define("CreateExtJsApp.view.grid.DataExporterView", {
   extend: "Ext.grid.Panel",
   xtype: 'DataExporterView',
   id: 'dataexportgrid',

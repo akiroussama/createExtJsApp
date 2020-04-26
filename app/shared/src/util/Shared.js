@@ -1,8 +1,8 @@
-Ext.define("TopTenExtJsGridFeaturesClassic.util.Shared", {
+Ext.define("CreateExtJsApp.util.Shared", {
 	alternateClassName: ['Shared'],
 	singleton: true,
 
-	log: function(msg) {
+	log: function (msg) {
 		console.log(msg);
 	}
 });

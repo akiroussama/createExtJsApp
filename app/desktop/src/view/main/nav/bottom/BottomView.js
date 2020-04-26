@@ -1,4 +1,4 @@
-Ext.define("TopTenExtJsGridFeaturesClassic.view.main.nav.bottom.BottomView", {
+Ext.define("CreateExtJsApp.view.main.nav.bottom.BottomView", {
   extend: 'Ext.Toolbar',
   xtype: 'bottomview',
   cls: 'bottomview',

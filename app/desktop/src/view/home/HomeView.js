@@ -1,4 +1,4 @@
-Ext.define("TopTenExtJsGridFeaturesClassic.view.home.HomeView", {
+Ext.define("CreateExtJsApp.view.home.HomeView", {
 	xtype: 'homeview',
 	cls: 'homeview',
 	controller: { type: 'homeviewcontroller' },

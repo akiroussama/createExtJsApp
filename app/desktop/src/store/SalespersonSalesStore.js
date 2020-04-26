@@ -1,4 +1,4 @@
-Ext.define("TopTenExtJsGridFeaturesClassic.store.SalespersonSalesStore", {
+Ext.define("CreateExtJsApp.store.SalespersonSalesStore", {
     extend: "Ext.data.ArrayStore",
     storeId: "SalespersonSalesStore",
     alias: "store.SalespersonSalesStore",

@@ -1,4 +1,4 @@
-Ext.define("TopTenExtJsGridFeaturesClassic.view.main.nav.top.TopView", {
+Ext.define("CreateExtJsApp.view.main.nav.top.TopView", {
   extend: 'Ext.container.Container',
   xtype: 'topview',
   cls: 'topview',

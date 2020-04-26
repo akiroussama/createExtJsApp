@@ -1,4 +1,4 @@
 Ext.application({
-	extend: 'TopTenExtJsGridFeaturesClassic.Application',
-	name: 'TopTenExtJsGridFeaturesClassic'
+	extend: 'CreateExtJsApp.Application',
+	name: 'CreateExtJsApp'
 });

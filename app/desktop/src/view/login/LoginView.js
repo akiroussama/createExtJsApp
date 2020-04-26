@@ -1,4 +1,4 @@
-Ext.define("TopTenExtJsGridFeaturesClassic.view.login.LoginView", {
+Ext.define("CreateExtJsApp.view.login.LoginView", {
 	extend: 'Ext.Container',
 	xtype: 'loginview',
 	cls: 'loginview',

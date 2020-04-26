@@ -31,13 +31,13 @@
 //   autoLoad: true,
 // });
 
-Ext.define("TopTenExtJsGridFeaturesClassic.view.grid.VirtualView", {
+Ext.define("CreateExtJsApp.view.grid.VirtualView", {
     extend: "Ext.grid.Panel",
     xtype: 'VirtualView',
     title: "Infinite Grid",
     //store: virtualstore,
     //store: bufferedstore,
-    //store: Ext.create('TopTenExtJsGridFeaturesClassic.store.BufferedStore',{}),
+    //store: Ext.create('CreateExtJsApp.store.BufferedStore',{}),
     //store: 'BufferedStore',
     columns: [
         { text: "First Name", dataIndex: "firstName" },

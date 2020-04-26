@@ -1,6 +1,6 @@
 /* global Ext */
 /* global FakeData */
-Ext.define('TopTenExtJsGridFeaturesClassic.model.EmployeeModel', {
+Ext.define('CreateExtJsApp.model.EmployeeModel', {
 	extend: 'Ext.data.Model',
 	fields: [
 		{ name: 'employeeNo' },

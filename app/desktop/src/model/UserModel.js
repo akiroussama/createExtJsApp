@@ -1,4 +1,4 @@
-Ext.define('TopTenExtJsGridFeaturesClassic.model.UserModel', {
+Ext.define('CreateExtJsApp.model.UserModel', {
 	extend: 'Ext.data.Model',
-	fields: [ 'name', 'email', 'phone' ]
+	fields: ['name', 'email', 'phone']
 });

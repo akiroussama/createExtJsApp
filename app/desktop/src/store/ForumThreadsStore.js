@@ -1,6 +1,6 @@
-Ext.define("TopTenExtJsGridFeaturesClassic.store.ForumThreadsStore", {
+Ext.define("CreateExtJsApp.store.ForumThreadsStore", {
     extend: "Ext.data.BufferedStore",
-    //model: 'TopTenExtJsGridFeaturesClassic.model.ForumThreadModel',
+    //model: 'CreateExtJsApp.model.ForumThreadModel',
 
     pageSize: 75,
     leadingBufferZone: 300,

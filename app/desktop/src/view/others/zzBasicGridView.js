@@ -1,9 +1,9 @@
-Ext.define("TopTenExtJsGridFeaturesClassic.view.grid.BasicGridView", {
+Ext.define("CreateExtJsApp.view.grid.BasicGridView", {
     extend: "Ext.grid.Panel",
     xtype: 'BasicGridView',
-    requires: ["TopTenExtJsGridFeaturesClassic.store.UsersStore"],
+    requires: ["CreateExtJsApp.store.UsersStore"],
     title: "Basic Grid",
-    store: Ext.create("TopTenExtJsGridFeaturesClassic.store.UsersStore", {}),
+    store: Ext.create("CreateExtJsApp.store.UsersStore", {}),
 
     // plugins: [
     // 	{

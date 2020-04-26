@@ -1,4 +1,4 @@
-Ext.define("TopTenExtJsGridFeaturesClassic.view.grid.TemplateView", {
+Ext.define("CreateExtJsApp.view.grid.TemplateView", {
     extend: "Ext.grid.Panel",
     xtype: 'TemplateView',
     title: "TemplateView",

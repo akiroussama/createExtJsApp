@@ -1,4 +1,4 @@
-Ext.define("TopTenExtJsGridFeaturesClassic.view.grid.ColumnWidgetsView", {
+Ext.define("CreateExtJsApp.view.grid.ColumnWidgetsView", {
     extend: "Ext.grid.Panel",
     xtype: 'ColumnWidgetsView',
     requires: [
@@ -9,7 +9,7 @@ Ext.define("TopTenExtJsGridFeaturesClassic.view.grid.ColumnWidgetsView", {
     ],
     xtype: "widget-grid",
     //store: "WidgetsStore",
-    store: Ext.create("TopTenExtJsGridFeaturesClassic.store.WidgetsStore", {}),
+    store: Ext.create("CreateExtJsApp.store.WidgetsStore", {}),
     //collapsible: true,
     viewConfig: {
         stripeRows: true,

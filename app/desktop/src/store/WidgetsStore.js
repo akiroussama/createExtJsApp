@@ -1,6 +1,6 @@
-Ext.define("TopTenExtJsGridFeaturesClassic.store.WidgetsStore", {
+Ext.define("CreateExtJsApp.store.WidgetsStore", {
     extend: "Ext.data.ArrayStore",
-    model: "TopTenExtJsGridFeaturesClassic.model.WidgetModel",
+    model: "CreateExtJsApp.model.WidgetModel",
     storeId: "WidgetsStore",
     data: (function () {
         var result = [],

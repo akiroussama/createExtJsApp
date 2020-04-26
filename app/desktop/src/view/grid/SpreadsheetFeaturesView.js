@@ -1,10 +1,10 @@
-Ext.define("TopTenExtJsGridFeaturesClassic.view.grid.SpreadsheetFeaturesView", {
+Ext.define("CreateExtJsApp.view.grid.SpreadsheetFeaturesView", {
     extend: "Ext.grid.Panel",
     xtype: 'SpreadsheetFeaturesView',
     //title: "Spreadsheet Features",
     store: "UsersStore",
     requires: [
-        "TopTenExtJsGridFeaturesClassic.store.UsersStore",
+        "CreateExtJsApp.store.UsersStore",
         "Ext.grid.selection.SpreadsheetModel",
     ],
 

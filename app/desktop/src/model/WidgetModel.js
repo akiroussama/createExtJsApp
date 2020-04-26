@@ -1,8 +1,8 @@
-Ext.define('TopTenExtJsGridFeaturesClassic.model.WidgetModel', {
+Ext.define('CreateExtJsApp.model.WidgetModel', {
     extend: 'Ext.data.Model',
     fields: [
-        {name: 'name'},
-        {name: 'progress', type: 'float'},
+        { name: 'name' },
+        { name: 'progress', type: 'float' },
         'sequence1',
         'sequence2',
         'sequence3',

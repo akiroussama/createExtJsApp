@@ -1,4 +1,4 @@
-Ext.define("TopTenExtJsGridFeaturesClassic.view.home.HomeViewModel", {
+Ext.define("CreateExtJsApp.view.home.HomeViewModel", {
 	extend: 'Ext.app.ViewModel',
 	alias: 'viewmodel.homeviewmodel',
 	data: {

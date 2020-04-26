@@ -1,4 +1,4 @@
-Ext.define("TopTenExtJsGridFeaturesClassic.view.grid.ForumThreadView", {
+Ext.define("CreateExtJsApp.view.grid.ForumThreadView", {
     extend: "Ext.grid.Panel",
     xtype: 'ForumThreadView',
     requires: ["Ext.grid.selection.SpreadsheetModel"],
@@ -54,7 +54,7 @@ Ext.define("TopTenExtJsGridFeaturesClassic.view.grid.ForumThreadView", {
         rowSelect: true,
     },
     store: Ext.create(
-        "TopTenExtJsGridFeaturesClassic.store.ForumThreadsStore",
+        "CreateExtJsApp.store.ForumThreadsStore",
         {}
     ),
 

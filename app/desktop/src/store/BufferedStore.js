@@ -1,4 +1,4 @@
-Ext.define("TopTenExtJsGridFeaturesClassic.store.BufferedStore", {
+Ext.define("CreateExtJsApp.store.BufferedStore", {
     extend: "Ext.data.BufferedStore",
     storeId: "BufferedStore",
     alias: "store.BufferedStore",

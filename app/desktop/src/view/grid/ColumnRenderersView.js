@@ -1,12 +1,12 @@
-Ext.define("TopTenExtJsGridFeaturesClassic.view.grid.ColumnRenderersView", {
+Ext.define("CreateExtJsApp.view.grid.ColumnRenderersView", {
   extend: "Ext.grid.Panel",
   xtype: 'ColumnRenderersView',
   store: { data: Data.getData() },
   columns: [
-    {text: 'employeeNo', dataIndex: 'employeeNo'},
-    {text: 'forename', dataIndex: 'forename'},
-    {text: 'surname', dataIndex: 'surname'},
-    {text: 'rating', dataIndex: 'rating'},
+    { text: 'employeeNo', dataIndex: 'employeeNo' },
+    { text: 'forename', dataIndex: 'forename' },
+    { text: 'surname', dataIndex: 'surname' },
+    { text: 'rating', dataIndex: 'rating' },
     {
       text: 'rating',
       dataIndex: 'rating',

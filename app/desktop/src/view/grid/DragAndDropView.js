@@ -1,4 +1,4 @@
-Ext.define("TopTenExtJsGridFeaturesClassic.view.grid.DragAndDropView", {
+Ext.define("CreateExtJsApp.view.grid.DragAndDropView", {
   extend: "Ext.container.Container",
   xtype: 'DragAndDropView',
   controller: 'DragAndDropViewController',
@@ -26,9 +26,9 @@ Ext.define("TopTenExtJsGridFeaturesClassic.view.grid.DragAndDropView", {
       flex: 1,
       store: { data: Data.getData() },
       columns: [
-        {text: 'employeeNo', dataIndex: 'employeeNo'},
-        {text: 'forename', dataIndex: 'forename'},
-        {text: 'surname', dataIndex: 'surname'}
+        { text: 'employeeNo', dataIndex: 'employeeNo' },
+        { text: 'forename', dataIndex: 'forename' },
+        { text: 'surname', dataIndex: 'surname' }
       ]
     },
     {
@@ -39,9 +39,9 @@ Ext.define("TopTenExtJsGridFeaturesClassic.view.grid.DragAndDropView", {
       labelWidth: 100,
       defaultType: 'textfield',
       items: [
-        {fieldLabel: 'employeeNo',name: 'employeeNo'},
-        {fieldLabel: 'forename',name: 'forename'},
-        {fieldLabel: 'surname',name: 'surname'}
+        { fieldLabel: 'employeeNo', name: 'employeeNo' },
+        { fieldLabel: 'forename', name: 'forename' },
+        { fieldLabel: 'surname', name: 'surname' }
       ]
     }
   ]

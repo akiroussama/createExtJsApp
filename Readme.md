@@ -1,4 +1,4 @@
-# TopTenExtJsGridFeaturesClassic application
+# CreateExtJsApp application
 
 [Sencha Virtual SenchaCon 2020](https://www.sencha.com/virtual-senchacon-2020/)
 

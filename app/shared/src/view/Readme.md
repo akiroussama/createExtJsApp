@@ -1,1 +1,1 @@
-# TopTenExtJsGridFeaturesClassic shared/app
+# CreateExtJsApp shared/app

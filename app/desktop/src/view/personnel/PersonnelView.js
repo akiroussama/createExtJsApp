@@ -1,19 +1,19 @@
-Ext.define("TopTenExtJsGridFeaturesClassic.view.personnel.PersonnelView",{
+Ext.define("CreateExtJsApp.view.personnel.PersonnelView", {
 	extend: 'Ext.grid.Panel',
 	xtype: 'personnelview',
 	cls: 'personnelview',
 	requires: [],
 	controller: 'personnelviewcontroller',
-	viewModel: {type: 'personnelviewmodel'},
-	store: {type: 'personnelviewstore'},
+	viewModel: { type: 'personnelviewmodel' },
+	store: { type: 'personnelviewstore' },
 	columns: [
 		{
 			text: 'Name',
 			dataIndex: 'name',
 			width: 100,
-			cell: {userCls: 'bold'}
+			cell: { userCls: 'bold' }
 		},
-		{text: 'Email',dataIndex: 'email',width: 230},
+		{ text: 'Email', dataIndex: 'email', width: 230 },
 		{
 			text: 'Phone',
 			dataIndex: 'phone',

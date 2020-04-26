@@ -1,7 +1,7 @@
-Ext.define("TopTenExtJsGridFeaturesClassic.view.personnel.PersonnelViewModel", {
+Ext.define("CreateExtJsApp.view.personnel.PersonnelViewModel", {
 	extend: 'Ext.app.ViewModel',
 	alias: 'viewmodel.personnelviewmodel',
 	data: {
-		name: 'TopTenExtJsGridFeaturesClassic'
+		name: 'CreateExtJsApp'
 	}
 });

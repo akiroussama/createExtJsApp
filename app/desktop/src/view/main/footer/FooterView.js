@@ -1,4 +1,4 @@
-Ext.define("TopTenExtJsGridFeaturesClassic.view.main.footer.FooterView", {
+Ext.define("CreateExtJsApp.view.main.footer.FooterView", {
 	extend: 'Ext.panel.Panel',
 	xtype: 'footerview',
 	cls: 'footerview',

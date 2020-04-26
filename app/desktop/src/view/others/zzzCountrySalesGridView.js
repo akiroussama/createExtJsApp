@@ -1,4 +1,4 @@
-Ext.define("TopTenExtJsGridFeaturesClassic.view.grid.CountrySalesGridView", {
+Ext.define("CreateExtJsApp.view.grid.CountrySalesGridView", {
     extend: "Ext.grid.Panel",
     xtype: 'CountrySalesGridView',
     title: "Country Sales Grid",

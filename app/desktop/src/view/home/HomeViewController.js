@@ -1,4 +1,4 @@
-Ext.define("TopTenExtJsGridFeaturesClassic.view.home.HomeViewController", {
+Ext.define("CreateExtJsApp.view.home.HomeViewController", {
 	extend: 'Ext.app.ViewController',
 	alias: 'controller.homeviewcontroller',
 

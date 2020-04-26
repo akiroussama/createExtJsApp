@@ -1,4 +1,4 @@
-Ext.define("TopTenExtJsGridFeaturesClassic.view.main.header.HeaderView", {
+Ext.define("CreateExtJsApp.view.main.header.HeaderView", {
   extend: 'Ext.toolbar.Toolbar',
   height: 50,
   xtype: 'headerview',

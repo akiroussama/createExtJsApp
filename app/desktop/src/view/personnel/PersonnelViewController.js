@@ -1,4 +1,4 @@
-Ext.define("TopTenExtJsGridFeaturesClassic.view.personnel.PersonnelViewController", {
+Ext.define("CreateExtJsApp.view.personnel.PersonnelViewController", {
 	extend: 'Ext.app.ViewController',
 	alias: 'controller.personnelviewcontroller',
 

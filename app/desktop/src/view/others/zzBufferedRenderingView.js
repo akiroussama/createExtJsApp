@@ -1,4 +1,4 @@
-Ext.define("TopTenExtJsGridFeaturesClassic.view.grid.BufferedRenderingView", {
+Ext.define("CreateExtJsApp.view.grid.BufferedRenderingView", {
     extend: "Ext.panel.Panel",
     xtype: 'BufferedRenderingView',
     title: "Buffered Rendering",
