@@ -8,25 +8,32 @@ Ext.define("TopTenExtJsGridFeaturesClassic.view.main.header.HeaderView", {
   //   handler:'onToolButtonClicked'
   // },
   items: [
-    // {
-    //   xtype: 'button',
-    //   ui: 'toolbutton-toolbar',
-    //   reference: 'navtoggle',
-    //   handler: 'onHeaderViewNavToggle',
-    //   iconCls: 'x-fa fa-navicon'
-    // },
+    {
+      xtype: 'button',
+      ui: 'toolbutton-toolbar',
+      reference: 'navtoggle',
+      //handler: 'onHeaderViewNavToggle',
+      iconCls: 'fa fa-bars'
+    },
     {
       xtype: 'component',
-      bind: {html: '{heading}'},
+      bind: { html: '{heading}' },
     },
-    // '->',
-    // '->',
-    // {name:'calendar', iconCls:'x-fa fa-calendar', tooltip:'calendar'},
-    // {name:'bolt',     iconCls:'x-fa fa-bolt',     tooltip:'bolt'},
-    // {name:'search',   iconCls:'x-fa fa-search',   tooltip:'search'},
+    '->',
+    '->',
+    { name: 'calendar', ui: 'toolbutton-toolbar', iconCls: 'fa fa-envelope-open-text', tooltip: 'calendar' },
+    { name: 'bolt', ui: 'toolbutton-toolbar', iconCls: 'fa fa-bell', tooltip: 'bolt' },
+    {
+      name: 'disconnect', iconCls: 'fa fa-power-off', tooltip: 'Disconnect',
+      ui: 'toolbutton-toolbar',
+      handler: function () {
+        localStorage.setItem('LoggedIn', false);
+        location.reload();
+      }
+    },
     // {
     //   reference: 'detailtoggle',
-    //   iconCls:'x-fa fa-arrow-left',
+    //   iconCls: 'fa fa-arrow-left',
     //   tooltip: 'show and hide detail view',
     //   ui: 'headerviewbutton-toolbar',
     //   handler: 'onHeaderViewDetailToggle'

@@ -62,6 +62,7 @@ Ext.define("TopTenExtJsGridFeaturesClassic.view.login.LoginView", {
 						height: 35,
 						name: 'username',
 						emptyText: 'Username',
+						itemId: 'username',
 						inputAttrTpl: 'data-cy=username',
 						listeners: {
 							afterrender: function () {

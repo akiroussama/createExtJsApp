@@ -4,8 +4,11 @@
   border-top: 1px solid darken($base-color, 10%);
   box-shadow: 2px -2px 8px 0 rgba(0, 0, 0, 0.4);
 
+  background-image: url(https://www.sencha.com/wp-content/uploads/2019/06/HomePageBackground-v3.png) !important;
 }
-
+.x-title-text{
+  color: #92c045;
+}
 @include extjs-button-toolbar-small-ui(
   $ui: 'footerbutton',
 	$background-color: transparent,
