@@ -5,7 +5,7 @@ Ext.define("CreateExtJsApp.Application", {
   defaultToken: 'homeview',
 
   launch: function () {
-    Data.makeData(10)
+    Data.makeData(50)
     Ext.ariaWarn = Ext.emptyFn
     Ext.getBody().removeCls('launching')
     var elem = document.getElementById("splash")

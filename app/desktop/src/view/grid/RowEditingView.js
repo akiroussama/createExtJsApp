@@ -9,20 +9,20 @@ Ext.define("CreateExtJsApp.view.grid.RowEditingView", {
   },
   store: { data: Data.getData() },
   columns: [
-    { text: 'employeeNo', dataIndex: 'employeeNo' },
+    { text: 'employeeNo', dataIndex: 'employeeNo', flex: 1 },
     {
       text: 'forename', dataIndex: 'forename',
       editor: {
         // defaults to textfield if no xtype is supplied
         allowBlank: false
-      }
+      }, flex: 1
     },
     {
       text: 'surname', dataIndex: 'surname',
       editor: {
         xtype: 'textfield',
         allowBlank: false
-      }
+      }, flex: 1
     },
     {
       text: 'joinDate', dataIndex: 'joinDate', xtype: 'datecolumn', width: 150,
@@ -32,7 +32,7 @@ Ext.define("CreateExtJsApp.view.grid.RowEditingView", {
         format: 'm/d/Y',
         minValue: '01/01/2011',
         minText: 'Cannot have a start date before the company existed!',
-      }
+      }, flex: 1
     }
   ]
 });

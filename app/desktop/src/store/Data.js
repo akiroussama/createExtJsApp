@@ -42,7 +42,7 @@ Ext.define('CreateExtJsApp.util.Data', {
 			noticePeriods = ['2 weeks', '1 month', '3 months'],
 			i;
 
-		for (i = 0; i < (count || 25); i++) {
+		for (i = 0; i < (count || 50); i++) {
 			var firstName = firstNames[me.random(0, firstNames.length - 1)],
 				lastName = lastNames[me.random(0, lastNames.length - 1)],
 				name = Ext.String.format("{0} {1}", firstName, lastName),

@@ -110,11 +110,11 @@ Ext.define("CreateExtJsApp.view.grid.BufferedRendererView", {
             //width: 500,
             //scrollable: true,
             columns: [
-                { text: "First Name", dataIndex: "firstName" },
-                { text: "Last Name", dataIndex: "lastName" },
-                { text: "Title", dataIndex: "title" },
-                { text: "Address", dataIndex: "address" },
-                { text: "Company", dataIndex: "company" },
+                { text: "First Name", dataIndex: "firstName", flex: 1 },
+                { text: "Last Name", dataIndex: "lastName", flex: 1 },
+                { text: "Title", dataIndex: "title", flex: 2 },
+                { text: "Address", dataIndex: "address", flex: 2 },
+                { text: "Company", dataIndex: "company", flex: 2 }
             ],
         };
 

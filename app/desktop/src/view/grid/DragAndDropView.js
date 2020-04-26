@@ -26,9 +26,9 @@ Ext.define("CreateExtJsApp.view.grid.DragAndDropView", {
       flex: 1,
       store: { data: Data.getData() },
       columns: [
-        { text: 'employeeNo', dataIndex: 'employeeNo' },
-        { text: 'forename', dataIndex: 'forename' },
-        { text: 'surname', dataIndex: 'surname' }
+        { text: 'employeeNo', dataIndex: 'employeeNo', flex: 1 },
+        { text: 'forename', dataIndex: 'forename', flex: 1 },
+        { text: 'surname', dataIndex: 'surname', flex: 1 }
       ]
     },
     {
@@ -39,9 +39,9 @@ Ext.define("CreateExtJsApp.view.grid.DragAndDropView", {
       labelWidth: 100,
       defaultType: 'textfield',
       items: [
-        { fieldLabel: 'employeeNo', name: 'employeeNo' },
-        { fieldLabel: 'forename', name: 'forename' },
-        { fieldLabel: 'surname', name: 'surname' }
+        { fieldLabel: 'employeeNo', name: 'employeeNo', width: 250 },
+        { fieldLabel: 'forename', name: 'forename', width: 250 },
+        { fieldLabel: 'surname', name: 'surname', width: 250 }
       ]
     }
   ]
