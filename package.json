@@ -23,7 +23,8 @@
     "start": "npm run dev",
     "clean": "rimraf build",
     "dev": "webpack-dev-server --env.profile=desktop --env.browser=yes --env.verbose=no",
-    "build": "npm run clean && cross-env webpack --env.profile=desktop --env.environment=production --env.treeshake=yes"
+    "build": "npm run clean && cross-env webpack --env.profile=desktop --env.environment=production --env.treeshake=yes",
+    "cypress:open": "cy"
   },
   "dependencies": {
     "@sencha/ext-classic": "~7.2.0",
