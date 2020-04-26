@@ -1,7 +1,7 @@
 Ext.define("CreateExtJsApp.Application", {
   extend: 'Ext.app.Application',
   name: 'CreateExtJsApp',
-  requires: ['CreateExtJsApp.*'],
+  requires: ['CreateExtJsApp.*', "CreateExtJsApp.util.Shared"],
   defaultToken: 'homeview',
 
   launch: function () {
