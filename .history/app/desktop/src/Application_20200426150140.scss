@@ -1,0 +1,21 @@
+@include extjs-button-toolbar-small-ui(
+  $ui: 'toolbutton',
+  $font-size: 24px,
+  $padding: 5px 10px 5px 10px,
+	$background-color: transparent,
+	$glyph-color: white,
+  $border-color: transparent
+);
+
+.x-treelist-nav{
+  background-image: url(https://www.sencha.com/wp-content/uploads/2019/06/HomePageBackground-v3.png) !important;
+}
+.headerview{
+  background-image: url(https://www.sencha.com/wp-content/uploads/2019/06/HomePageBackground-v3.png) !important;
+}
+.footerview{
+  background-image: url(https://www.sencha.com/wp-content/uploads/2019/06/HomePageBackground-v3.png) !important;
+}
+.topview{
+  background-image: url(https://www.sencha.com/wp-content/uploads/2019/06/HomePageBackground-v3.png) !important;
+}

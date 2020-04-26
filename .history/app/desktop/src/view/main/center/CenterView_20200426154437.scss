@@ -1,0 +1,18 @@
+.centerview { 
+	border-left: 0; 
+	border-top: 0; 
+  padding: 0px;
+
+	color: $base-color; 
+	font-size: 24px;
+	background-image: url(https://www.sencha.com/wp-content/uploads/2020/04/Virtual-SenchaCon-Ad-final.png);
+	//background-size: 20px 20px;
+  //background-color: #e8e8e8;
+  
+  background-color: white;
+}
+
+.x-panel-header-default {
+    background-image: none;
+    background-color: #afc0c9 !important;
+}

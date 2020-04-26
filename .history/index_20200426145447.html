@@ -1,0 +1,44 @@
+<!DOCTYPE HTML>
+<html manifest="">
+
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=10, user-scalable=yes">
+  <title>TopTenExtJsGridFeaturesClassic</title>
+
+  <script type="text/javascript">
+    var Ext = Ext || {};
+    Ext.beforeLoad = function (tags) {
+      //var s = location.search;
+      var profile;
+      profile = 'desktop';
+      Ext.manifest = 'generatedFiles/' + profile;
+    };
+  </script>
+  <style>
+    .launching {
+      background: url(https://www.sencha.com/wp-content/uploads/2019/06/HomePageBackground-v3.png) no-repeat center center fixed;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+    }
+
+    .loadingText {
+      color: whitesmoke;
+    }
+  </style>
+  <!-- The line below must be kept intact for Sencha Cmd to build your application -->
+  <script id="microloader" data-app="711f7a61-a1d0-4f86-9518-aa40ecd6044e" type="text/javascript"
+    src="generatedFiles/bootstrap.js"></script>
+</head>
+
+<body class="launching">
+  <div id="splash" style="margin-top:20%;font-family:Arial;font-size:64px;text-align:center;color:#404040;">
+    <div id="theLoadingText" class="loadingText">LOADING...</div>
+    <i style="margin:20px; color: whitesmoke;" class="fa fa-spinner fa-spin"></i>
+  </div>
+</body>
+
+</html>
