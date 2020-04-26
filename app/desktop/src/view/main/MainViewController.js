@@ -8,7 +8,7 @@ Ext.define("TopTenExtJsGridFeaturesClassic.view.main.MainViewController", {
     centerViewXtype: null
   },
 
-  initViewModel: function(vm) {
+  initViewModel: function (vm) {
     var me = this;
 
     // menuItem can change either because the user selected an item in the NavView, or
@@ -16,7 +16,7 @@ Ext.define("TopTenExtJsGridFeaturesClassic.view.main.MainViewController", {
     vm.bind("", me.setCenterViewXtype, me);
   },
 
-  updateCenterViewXtype: function(menuItem) {
+  updateCenterViewXtype: function (menuItem) {
     if (!menuItem) return;
     var data = menuItem.data;
     if (!Ext.ClassManager.getByAlias("widget." + data.xtype)) {
@@ -38,10 +38,10 @@ Ext.define("TopTenExtJsGridFeaturesClassic.view.main.MainViewController", {
   },
 
   routes: {
-  ':xtype': {action: 'mainRoute'}
+    ':xtype': { action: 'mainRoute' }
   },
 
-  mainRoute:function(xtype) {
+  mainRoute: function (xtype) {
     //var menuview = this.lookup('menuview');
     var navview = this.lookup('navview');
     var menuview = navview.items.items[0]
@@ -57,7 +57,7 @@ Ext.define("TopTenExtJsGridFeaturesClassic.view.main.MainViewController", {
       return;
     }
     if (!centerview.getComponent(xtype)) {
-      centerview.add({ xtype: xtype,  itemId: xtype, heading: node.get('text') });
+      centerview.add({ xtype: xtype, itemId: xtype, heading: node.get('text') });
     }
     centerview.setActiveItem(xtype);
     menuview.setSelection(node);
@@ -69,7 +69,7 @@ Ext.define("TopTenExtJsGridFeaturesClassic.view.main.MainViewController", {
     if (node == null) { return }
     var vm = this.getViewModel();
     if (node.get('xtype') != undefined) {
-      this.redirectTo( node.get('xtype') );
+      this.redirectTo(node.get('xtype'));
     }
   },
 
@@ -79,10 +79,10 @@ Ext.define("TopTenExtJsGridFeaturesClassic.view.main.MainViewController", {
     //var topPic = this.lookup('topPic');
     var topPic = Ext.getCmp('topPic');
     if (vm.get('navCollapsed') == true) {
-      topPic.setData({ src:'resources/desktop/5.jpg', caption:'John Smith', imgStyle: 'imgSmall', height: '100px' });
+      topPic.setData({ src: 'resources/desktop/5.jpg', caption: 'John Smith', imgStyle: 'imgSmall', height: '100px' });
     }
     else {
-      topPic.setData({ src:'resources/desktop/5.jpg', caption:'John Smith', imgStyle: 'imgBig', height: '150px' });
+      topPic.setData({ src: 'resources/desktop/5.jpg', caption: 'John Smith', imgStyle: 'imgBig', height: '150px' });
     }
 
   },
@@ -91,24 +91,24 @@ Ext.define("TopTenExtJsGridFeaturesClassic.view.main.MainViewController", {
     var vm = this.getViewModel();
     vm.set('detailCollapsed', !vm.get('detailCollapsed'));
     var detailtoggle = this.lookup('detailtoggle');
-    if(vm.get('detailCollapsed') === true) {
+    if (vm.get('detailCollapsed') === true) {
       //detailtoggle.setType('prev')
-      detailtoggle.setIconCls('x-fa fa-arrow-left')
+      detailtoggle.setIconCls('fad fa-arrow-left')
     }
     else {
       //detailtoggle.setType('next')
-      detailtoggle.setIconCls('x-fa fa-arrow-right')
+      detailtoggle.setIconCls('fad fa-arrow-right')
     }
   },
 
   onToolButtonClicked: function (button) {
     Ext.Msg.show({
-      title:'Tool Button',
+      title: 'Tool Button',
       closable: false,
       message: button.name + ' tool button was clicked',
       buttons: Ext.Msg.OK,
       icon: Ext.Msg.INFO,
-      fn: function(btn) {
+      fn: function (btn) {
         if (btn === 'ok') {
           console.log('ok pressed');
         } else {

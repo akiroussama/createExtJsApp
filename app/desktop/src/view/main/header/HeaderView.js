@@ -13,7 +13,7 @@ Ext.define("TopTenExtJsGridFeaturesClassic.view.main.header.HeaderView", {
       ui: 'toolbutton-toolbar',
       reference: 'navtoggle',
       //handler: 'onHeaderViewNavToggle',
-      iconCls: 'fa fa-bars'
+      iconCls: 'fad fa-bars'
     },
     {
       xtype: 'component',
@@ -21,10 +21,10 @@ Ext.define("TopTenExtJsGridFeaturesClassic.view.main.header.HeaderView", {
     },
     '->',
     '->',
-    { name: 'calendar', ui: 'toolbutton-toolbar', iconCls: 'fa fa-envelope-open-text', tooltip: 'calendar' },
-    { name: 'bolt', ui: 'toolbutton-toolbar', iconCls: 'fa fa-bell', tooltip: 'bolt' },
+    { name: 'calendar', ui: 'toolbutton-toolbar', iconCls: 'fad fa-envelope-open-text', tooltip: 'calendar' },
+    { name: 'bolt', ui: 'toolbutton-toolbar', iconCls: 'fad fa-bell', tooltip: 'bolt' },
     {
-      name: 'disconnect', iconCls: 'fa fa-power-off', tooltip: 'Disconnect',
+      name: 'disconnect', iconCls: 'fad fa-power-off', tooltip: 'Disconnect',
       ui: 'toolbutton-toolbar',
       handler: function () {
         localStorage.setItem('LoggedIn', false);
@@ -33,7 +33,7 @@ Ext.define("TopTenExtJsGridFeaturesClassic.view.main.header.HeaderView", {
     },
     // {
     //   reference: 'detailtoggle',
-    //   iconCls: 'fa fa-arrow-left',
+    //   iconCls: 'fad fa-arrow-left',
     //   tooltip: 'show and hide detail view',
     //   ui: 'headerviewbutton-toolbar',
     //   handler: 'onHeaderViewDetailToggle'

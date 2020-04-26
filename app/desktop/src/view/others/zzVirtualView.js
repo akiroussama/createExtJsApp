@@ -57,7 +57,7 @@ Ext.define("TopTenExtJsGridFeaturesClassic.view.grid.VirtualView", {
                     xtype: "button",
                     text: "Get",
                     xwidth: "100px",
-                    iconCls: "fa fa-table",
+                    iconCls: "fad fa-table",
                     handler: function (button) {
                         console.log(vs);
                         var range = vs.createActiveRange({

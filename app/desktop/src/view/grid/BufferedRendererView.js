@@ -16,7 +16,7 @@ Ext.define("TopTenExtJsGridFeaturesClassic.view.grid.BufferedRendererView", {
             cls: "toolbar-btn-shadow",
             items: [
                 // {
-                //   xtype: 'button', text: 'FakeData', xwidth: '100px', "iconCls": "fa fa-table",
+                //   xtype: 'button', text: 'FakeData', xwidth: '100px', "iconCls": "fad fa-table",
                 //   handler: function(button) {
                 //     Data.makeData();
                 //     var panel = button.up('panel');
@@ -37,7 +37,7 @@ Ext.define("TopTenExtJsGridFeaturesClassic.view.grid.BufferedRendererView", {
                     itemId: "load",
                     disabled: false,
                     xwidth: "100px",
-                    iconCls: "fa fa-download",
+                    iconCls: "fad fa-download",
                     handler: function (button) {
                         var panel = button.up("panel");
                         var label = panel.down("label");

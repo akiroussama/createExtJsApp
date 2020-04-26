@@ -51,7 +51,7 @@ Ext.define("TopTenExtJsGridFeaturesClassic.view.grid.SpreadsheetFeaturesView", {
             items: [
                 {
                     text: "Cell Context",
-                    iconCls: "fa fa-snowflake",
+                    iconCls: "fad fa-snowflake",
                     handler: function (button) {
                         var panel = button.up("panel");
                         myCell = new Ext.grid.CellContext(
@@ -62,7 +62,7 @@ Ext.define("TopTenExtJsGridFeaturesClassic.view.grid.SpreadsheetFeaturesView", {
                 },
                 {
                     text: "Selection Cell Count",
-                    iconCls: "fa fa-snowflake",
+                    iconCls: "fad fa-snowflake",
                     handler: function (button) {
                         var panel = button.up("panel");
                         var sel = panel.getSelectionModel().getSelected();
@@ -75,7 +75,7 @@ Ext.define("TopTenExtJsGridFeaturesClassic.view.grid.SpreadsheetFeaturesView", {
                 },
                 {
                     text: "Clear",
-                    iconCls: "fa fa-snowflake",
+                    iconCls: "fad fa-snowflake",
                     handler: function (button) {
                         var panel = button.up("panel");
                         var sel = panel.getSelectionModel().getSelected();
@@ -86,7 +86,7 @@ Ext.define("TopTenExtJsGridFeaturesClassic.view.grid.SpreadsheetFeaturesView", {
                 },
                 {
                     text: "Each Cell",
-                    iconCls: "fa fa-snowflake",
+                    iconCls: "fad fa-snowflake",
                     handler: function (button) {
                         var panel = button.up("panel");
                         var sel = panel.getSelectionModel().getSelected();
@@ -100,22 +100,22 @@ Ext.define("TopTenExtJsGridFeaturesClassic.view.grid.SpreadsheetFeaturesView", {
                             ) {
                                 alert(
                                     "row " +
-                                        rowIndex +
-                                        " col " +
-                                        colIndex +
-                                        " data is " +
-                                        context.record.data[
-                                            context.column.dataIndex
-                                        ]
+                                    rowIndex +
+                                    " col " +
+                                    colIndex +
+                                    " data is " +
+                                    context.record.data[
+                                    context.column.dataIndex
+                                    ]
                                 );
                             },
-                            this);
+                                this);
                         }
                     },
                 },
                 {
                     text: "Get Records",
-                    iconCls: "fa fa-snowflake",
+                    iconCls: "fad fa-snowflake",
                     handler: function (button) {
                         var panel = button.up("panel");
                         var sel = panel.getSelectionModel().getSelected();
@@ -127,7 +127,7 @@ Ext.define("TopTenExtJsGridFeaturesClassic.view.grid.SpreadsheetFeaturesView", {
                 },
                 {
                     text: "Get Range",
-                    iconCls: "fa fa-snowflake",
+                    iconCls: "fad fa-snowflake",
                     handler: function (button) {
                         var panel = button.up("panel");
                         var sel = panel.getSelectionModel().getSelected();
@@ -136,7 +136,7 @@ Ext.define("TopTenExtJsGridFeaturesClassic.view.grid.SpreadsheetFeaturesView", {
                 },
                 {
                     text: "Select Cells",
-                    iconCls: "fa fa-snowflake",
+                    iconCls: "fad fa-snowflake",
                     handler: function (button) {
                         var panel = button.up("panel");
                         panel

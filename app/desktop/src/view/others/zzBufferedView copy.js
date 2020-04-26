@@ -23,7 +23,7 @@ Ext.define("TopTenExtJsGridFeaturesClassic.view.grid.BufferedViewCopy", {
                     xtype: "button",
                     text: "FakeData",
                     xwidth: "100px",
-                    iconCls: "fa fa-table",
+                    iconCls: "fad fa-table",
                     handler: function (button) {
                         // setInterval(function(){
                         //   setTimeout(function() {
@@ -47,7 +47,7 @@ Ext.define("TopTenExtJsGridFeaturesClassic.view.grid.BufferedViewCopy", {
                     itemId: "load",
                     disabled: true,
                     xwidth: "100px",
-                    iconCls: "fa fa-download",
+                    iconCls: "fad fa-download",
                     handler: function (button) {
                         var panel = button.up("panel");
                         var label = panel.down("label");
@@ -62,9 +62,9 @@ Ext.define("TopTenExtJsGridFeaturesClassic.view.grid.BufferedViewCopy", {
                             var time = end - start;
                             label.setText(
                                 Data.numRecords +
-                                    " records, " +
-                                    Math.round(time) +
-                                    " milliseconds, bufferedRenderer: "
+                                " records, " +
+                                Math.round(time) +
+                                " milliseconds, bufferedRenderer: "
                             );
                             panel.endLoading();
                         }, 10);
