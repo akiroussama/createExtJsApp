@@ -10,7 +10,7 @@ Ext.define("TopTenExtJsGridFeaturesClassic.Application", {
     Ext.getBody().removeCls('launching')
     var elem = document.getElementById("splash")
     elem.parentNode.removeChild(elem)
-    Ext.create({ xtype: 'loginview', plugins: 'viewport' })
+    Ext.create({xtype: 'mainview', plugins: 'viewport'})
   },
 
   onAppUpdate: function () {

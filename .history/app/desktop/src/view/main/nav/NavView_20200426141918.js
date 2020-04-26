@@ -71,6 +71,6 @@ Ext.define("TopTenExtJsGridFeaturesClassic.view.main.nav.NavView", {
     bbar: {
         xtype: "bottomview",
         reference: "bottomview",
-        height: 140,
+        height: 40,
     },
 });
