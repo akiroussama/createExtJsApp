@@ -1,8 +1,8 @@
 {
-  "name": "top-ten-ext-js-grid-features-classic",
+  "name": "ext-create-extjs-application",
   "product": "ext",
   "version": "0.0.1",
-  "description": "top-ten-ext-js-grid-features-classic description for Ext JS app CreateExtJsApp",
+  "description": "ext-create-extjs-application description for Ext JS app CreateExtJsApp",
   "repository": {
     "type": "git",
     "url": "https://github.com/"
