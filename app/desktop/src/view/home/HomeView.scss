@@ -1,8 +1,9 @@
 // sass for TopTenExtJsGridFeaturesClassic.view.home.HomeView
 .homeview { 
-	color: $color;
-  background-color: white;
-  padding: 15px;
-  border: 1px solid lightgray;
-  box-shadow: 2px 2px 8px 0 rgba(0, 0, 0, 0.4);
-}
+  background-image: url(./SenchaCon2020.png) !important;
+  background-color: #011219 !important;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+    background-size: cover !important;
+    height: 100% !important;
+} 

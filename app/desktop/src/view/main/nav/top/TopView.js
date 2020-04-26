@@ -5,7 +5,7 @@ Ext.define("TopTenExtJsGridFeaturesClassic.view.main.nav.top.TopView", {
   items: [
     {
       xtype: 'component',
-      data: { src:'resources/desktop/sencha.png', caption:'Top 10 Ext JS Grid Features', imgStyle: 'imgBig', height: '150px' },
+      data: { src: 'resources/desktop/sencha.png', caption: 'You will never walk alone!', imgStyle: 'imgBig', height: '150px' },
       reference: 'topPic',
       id: 'topPic',
       tpl: new Ext.XTemplate(`

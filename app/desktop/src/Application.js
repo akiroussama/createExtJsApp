@@ -10,9 +10,10 @@ Ext.define("TopTenExtJsGridFeaturesClassic.Application", {
     Ext.getBody().removeCls('launching')
     var elem = document.getElementById("splash")
     elem.parentNode.removeChild(elem)
+    var whichView = 'mainview';
     var loggedIn = localStorage.getItem("LoggedIn");
     if (loggedIn != 'true') { whichView = 'loginview' }
-    Ext.create({ xtype: 'mainview', plugins: 'viewport' })
+    Ext.create({ xtype: whichView, plugins: 'viewport' })
   },
 
   onAppUpdate: function () {
