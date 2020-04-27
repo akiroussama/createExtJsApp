@@ -10,7 +10,7 @@ Ext.define("CreateExtJsApp.view.formFields.FormFields", {
 			xtype: 'textfield',
 			name: 'textfield1',
 			inputAttrTpl: 'data-cy=extjsVersion',
-			fieldLabel: 'ExtJs Version',
+			fieldLabel: 'Text Field',
 			value: 'Text field value'
 		}, {
 			xtype: 'hiddenfield',
@@ -18,12 +18,15 @@ Ext.define("CreateExtJsApp.view.formFields.FormFields", {
 			value: 'Hidden field value'
 		}, {
 			xtype: 'textfield',
+			inputAttrTpl: 'data-cy=formPwd',
 			name: 'password1',
 			inputType: 'password',
 			itemId: 'pwd',
 			fieldLabel: 'Password field'
+			// for fielfield we should use the plugin https://github.com/abramenal/cypress-file-upload
 		}, {
 			xtype: 'filefield',
+			inputAttrTpl: 'data-cy=filefield',
 			name: 'file1',
 			fieldLabel: 'File upload'
 		}, {
