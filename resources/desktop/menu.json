@@ -18,24 +18,10 @@
     "leaf": true
   },
   {
-    "text": "Horizontal scrolling",
-    "xtype": "ColumnLockingView",
-    "itemId": "template",
-    "iconCls": "fa fa-arrows-h",
-    "leaf": true
-  },
-  {
     "text": "Grid Widgets",
     "xtype": "ColumnWidgetsView",
     "itemId": "widgetGrid",
     "iconCls": "fa fa-chart-bar",
-    "leaf": true
-  },
-  {
-    "text": "Drag and Drop",
-    "xtype": "DragAndDropView",
-    "itemId": "template",
-    "iconCls": "fa fa-eye-dropper",
     "leaf": true
   },
   {

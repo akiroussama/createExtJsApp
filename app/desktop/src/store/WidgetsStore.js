@@ -27,7 +27,6 @@ Ext.define("CreateExtJsApp.store.WidgetsStore", {
         for (i = 0; i < 8; i++) {
             result.push([
                 i + 1,
-                "Record " + (i + 1),
                 Ext.Number.randomInt(0, 100) / 100,
                 generateSequence(),
                 generateSequence(),
