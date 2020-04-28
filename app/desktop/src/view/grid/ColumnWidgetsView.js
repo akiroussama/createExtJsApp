@@ -8,6 +8,8 @@ Ext.define("CreateExtJsApp.view.grid.ColumnWidgetsView", {
         "Ext.sparkline.*",
     ],
     xtype: "widget-grid",
+    cyId: 'widget-grid',
+    id: 'widgetGrid',
     //store: "WidgetsStore",
     store: Ext.create("CreateExtJsApp.store.WidgetsStore", {}),
     //collapsible: true,
@@ -30,6 +32,7 @@ Ext.define("CreateExtJsApp.view.grid.ColumnWidgetsView", {
                 dataIndex: "progress",
                 widget: {
                     xtype: "sliderwidget",
+                    inputAttrTpl: 'data-cy=sliderwidget',
                     minValue: 0,
                     maxValue: 1,
                     decimalPrecision: 2,
@@ -56,6 +59,7 @@ Ext.define("CreateExtJsApp.view.grid.ColumnWidgetsView", {
                     width: 90,
                     textAlign: "left",
                     xtype: "button",
+                    inputAttrTpl: 'data-cy=buttonWidget',
                     shadow: true,
                     iconCls: "widget-grid-user",
                     handler: function (btn) {
@@ -70,16 +74,18 @@ Ext.define("CreateExtJsApp.view.grid.ColumnWidgetsView", {
             {
                 text: "Progress",
                 xtype: "widgetcolumn",
-                width: 120,
+                flex: 1,
                 dataIndex: "progress",
                 widget: {
                     xtype: "progressbarwidget",
-                    textTpl: ['{percent:number("0")}% done'],
+                    inputAttrTpl: 'data-cy=progressbarwidget',
+
+                    textTpl: ['{percent:number("15")}% done'],
                 },
             },
             {
                 text: "Run Mode",
-                width: 150,
+                flex: 1.2,
                 xtype: "widgetcolumn",
                 widget: {
                     xtype: "combo",
@@ -98,25 +104,25 @@ Ext.define("CreateExtJsApp.view.grid.ColumnWidgetsView", {
             //},
             {
                 text: "Bar",
-                width: 100,
+                flex: 1,
                 dataIndex: "sequence2",
                 xtype: "widgetcolumn",
                 widget: {
                     xtype: "sparklinebar",
                 },
             },
-            {
-                text: "Discrete",
-                width: 100,
-                dataIndex: "sequence3",
-                xtype: "widgetcolumn",
-                widget: {
-                    xtype: "sparklinediscrete",
-                },
-            },
+            // {
+            //     text: "Discrete",
+            //     width: 100,
+            //     dataIndex: "sequence3",
+            //     xtype: "widgetcolumn",
+            //     widget: {
+            //         xtype: "sparklinediscrete",
+            //     },
+            // },
             {
                 text: "Bullet",
-                width: 100,
+                flex: 1,
                 dataIndex: "sequence4",
                 xtype: "widgetcolumn",
                 widget: {
@@ -125,7 +131,7 @@ Ext.define("CreateExtJsApp.view.grid.ColumnWidgetsView", {
             },
             {
                 text: "Pie",
-                width: 60,
+                flex: 0.5,
                 dataIndex: "sequence5",
                 xtype: "widgetcolumn",
                 widget: {
@@ -134,7 +140,7 @@ Ext.define("CreateExtJsApp.view.grid.ColumnWidgetsView", {
             },
             {
                 text: "Box",
-                width: 100,
+                flex: 1,
                 dataIndex: "sequence6",
                 xtype: "widgetcolumn",
                 widget: {
@@ -143,7 +149,7 @@ Ext.define("CreateExtJsApp.view.grid.ColumnWidgetsView", {
             },
             {
                 text: "TriState",
-                width: 100,
+                flex: 1,
                 dataIndex: "sequence7",
                 xtype: "widgetcolumn",
                 widget: {
