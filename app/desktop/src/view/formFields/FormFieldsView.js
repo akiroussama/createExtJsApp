@@ -24,25 +24,28 @@ Ext.define("CreateExtJsApp.view.formFields.FormFields", {
 			itemId: 'pwd',
 			fieldLabel: 'Password field'
 			// for fielfield we should use the plugin https://github.com/abramenal/cypress-file-upload
-		}, {
-			xtype: 'filefield',
-			inputAttrTpl: 'data-cy=filefield',
-			name: 'file1',
-			fieldLabel: 'File upload'
+			// }, {
+			// 	xtype: 'filefield',
+			// 	inputAttrTpl: 'data-cy=filefield',
+			// 	name: 'file1',
+			// 	fieldLabel: 'File upload'
 		}, {
 			xtype: 'textareafield',
 			name: 'textarea1',
+			inputAttrTpl: 'data-cy=TextArea',
 			fieldLabel: 'TextArea',
 			value: 'Textarea value'
 		}, {
 			xtype: 'displayfield',
 			name: 'displayfield1',
+			inputAttrTpl: 'data-cy=displayfield',
 			fieldLabel: 'Display field',
-			value: 'Display field <span style="color: "green";">value</span>'
+			value: 'Display field value'
 		}, {
 			xtype: 'numberfield',
 			name: 'numberfield1',
 			fieldLabel: 'Number field',
+			inputAttrTpl: 'data-cy=numberfield',
 			value: 5,
 			minValue: 0,
 			maxValue: 50
@@ -50,17 +53,20 @@ Ext.define("CreateExtJsApp.view.formFields.FormFields", {
 			xtype: 'checkboxfield',
 			name: 'checkbox1',
 			fieldLabel: 'Checkbox',
+			inputAttrTpl: 'data-cy=checkboxfield',
 			boxLabel: 'box label'
 		}, {
 			xtype: 'radiofield',
 			name: 'radio1',
 			value: 'radiovalue1',
+			inputAttrTpl: 'data-cy=radiofield1',
 			fieldLabel: 'Radio buttons',
 			boxLabel: 'radio 1'
 		}, {
 			xtype: 'radiofield',
 			name: 'radio1',
 			value: 'radiovalue2',
+			inputAttrTpl: 'data-cy=radiofield2',
 			fieldLabel: '',
 			labelSeparator: '',
 			hideEmptyLabel: false,
@@ -69,12 +75,14 @@ Ext.define("CreateExtJsApp.view.formFields.FormFields", {
 			xtype: 'timefield',
 			name: 'time1',
 			fieldLabel: 'Time Field',
+			inputAttrTpl: 'data-cy=timefield',
 			minValue: '1:30 AM',
 			maxValue: '9:15 PM'
 		}, {
 			xtype: 'textfield',
 			name: 'email',
 			fieldLabel: 'Email Address',
+			inputAttrTpl: 'data-cy=email',
 			vtype: 'email',
 			msgTarget: 'side',
 			allowBlank: false
@@ -91,12 +99,14 @@ Ext.define("CreateExtJsApp.view.formFields.FormFields", {
 			items: [{
 				xtype: 'datefield',
 				name: 'startDate',
+				inputAttrTpl: 'data-cy=startDate',
 				fieldLabel: 'Start',
 				allowBlank: false
 			}, {
 				xtype: 'datefield',
 				name: 'endDate',
 				fieldLabel: 'End',
+				inputAttrTpl: 'data-cy=endDate',
 				padding: '0 0 0 10',
 				allowBlank: false
 			}]

@@ -12,7 +12,7 @@ Ext.define("CreateExtJsApp.Application", {
     elem.parentNode.removeChild(elem)
     var whichView = 'mainview';
     var loggedIn = localStorage.getItem("LoggedIn");
-    if (loggedIn != 'true') { whichView = 'loginview' }
+    if (loggedIn != 'true') { whichView = 'loginview'; }
     Ext.create({ xtype: whichView, plugins: 'viewport' })
   },
 
