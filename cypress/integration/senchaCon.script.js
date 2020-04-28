@@ -13,41 +13,41 @@ describe("Go to the login page", () => {
             .type('1234'/*, { delay: 100 }*/).should("have.value", "1234");
         cy.get('[data-cy=loginBtn]').should('be.visible').click().wait(2000)
         // Go to the home page, then go to the first screen From Fields
-        cy.get('[data-cy=formFieldsview]').should('be.visible')
-            .click()//.pause()
-        cy.hash().should('eq', '#formFieldsview')
-        cy.get('[data-cy=extjsVersion]').click().clear().type(' Welcome to SenchaCon 2020'/*, { delay: 100 }*/);
+        // cy.get('[data-cy=formFieldsview]').should('be.visible')
+        //     .click()//.pause()
+        // cy.hash().should('eq', '#formFieldsview')
+        // cy.get('[data-cy=extjsVersion]').click().clear().type(' Welcome to SenchaCon 2020'/*, { delay: 100 }*/);
 
-        cy.get('[data-cy=formPwd]').should('be.visible')
-            .type('formPwd');
+        // cy.get('[data-cy=formPwd]').should('be.visible')
+        //     .type('formPwd');
 
-        cy.get('[data-cy=TextArea]').click().clear().type(' This is a textarea...{enter} this is a new line ! '/*, { delay: 100 }*/);
+        // cy.get('[data-cy=TextArea]').click().clear().type(' This is a textarea...{enter} this is a new line ! '/*, { delay: 100 }*/);
 
-        cy.get('[data-cy=displayfield]').contains("Display field value").should("have.text", "Display field value");
-        cy.get('[data-cy=numberfield]').click().clear().type('15'/*, { delay: 100 }*/);
-        cy.get('.x-form-spinner-up').click({ delay: 500 }).click({ delay: 500 });
+        // cy.get('[data-cy=displayfield]').contains("Display field value").should("have.text", "Display field value");
+        // cy.get('[data-cy=numberfield]').click().clear().type('15'/*, { delay: 100 }*/);
+        // cy.get('.x-form-spinner-up').click({ delay: 500 }).click({ delay: 500 });
 
-        cy.get('.x-form-spinner-down').click({ delay: 1500 }).click({ delay: 500 }).click({ delay: 500 }).click({ delay: 500 }).click({ delay: 500 });
-        cy.get('[data-cy=checkboxfield]').click({ delay: 500 })
-        cy.get('[data-cy=radiofield1]').click({ delay: 500 })
-        cy.get('[data-cy=radiofield2]').click({ delay: 500 })
-        cy.get('[data-cy=checkboxfield]').click({ delay: 500 })
-        cy.get('[data-cy=timefield]').click({ delay: 500 }).type("12")
-        cy.get('.x-form-time-trigger').click({ delay: 500 });
-        cy.get('li').last();
-        cy.get('.x-form-time-trigger').click({ delay: 500 });
-        cy.get('li').first();
-        cy.get('[data-cy=email]').click({ delay: 500 }).type('akir.oussama').clear({ delay: 300 }).type('akir.oussama@gmail.com');
-        cy.get('[data-cy=startDate]').click({ delay: 500 }).type('28/04/2020')
-        cy.get('#demoEndDate').within(() => {
-            cy.get('.x-form-date-trigger').click({ delay: 500 })
-        });
-        cy.get('#demoEndDate-picker-nextEl').click();
-        cy.get('.x-datepicker-date').contains('29').click({ force: true });
-        cy.get('[data-cy=combobox]').click({ delay: 500 }).type('Cy')//.should("have.value", "Cypress");;
-        cy.get('.x-boundlist-item').contains('Cypress').click();
-        cy.get('.x-form-arrow-trigger').click();
-        cy.get('.x-boundlist-item').contains('ExtJS').click();
+        // cy.get('.x-form-spinner-down').click({ delay: 1500 }).click({ delay: 500 }).click({ delay: 500 }).click({ delay: 500 }).click({ delay: 500 });
+        // cy.get('[data-cy=checkboxfield]').click({ delay: 500 })
+        // cy.get('[data-cy=radiofield1]').click({ delay: 500 })
+        // cy.get('[data-cy=radiofield2]').click({ delay: 500 })
+        // cy.get('[data-cy=checkboxfield]').click({ delay: 500 })
+        // cy.get('[data-cy=timefield]').click({ delay: 500 }).type("12")
+        // cy.get('.x-form-time-trigger').click({ delay: 500 });
+        // cy.get('li').last();
+        // cy.get('.x-form-time-trigger').click({ delay: 500 });
+        // cy.get('li').first();
+        // cy.get('[data-cy=email]').click({ delay: 500 }).type('akir.oussama').clear({ delay: 300 }).type('akir.oussama@gmail.com');
+        // cy.get('[data-cy=startDate]').click({ delay: 500 }).type('28/04/2020')
+        // cy.get('#demoEndDate').within(() => {
+        //     cy.get('.x-form-date-trigger').click({ delay: 500 })
+        // });
+        // cy.get('#demoEndDate-picker-nextEl').click();
+        // cy.get('.x-datepicker-date').contains('29').click({ force: true });
+        // cy.get('[data-cy=combobox]').click({ delay: 500 }).type('Cy')//.should("have.value", "Cypress");;
+        // cy.get('.x-boundlist-item').contains('Cypress').click();
+        // cy.get('.x-form-arrow-trigger').click();
+        // cy.get('.x-boundlist-item').contains('ExtJS').click();
         // cy.contains('Browse...').should('be.visible')
         //     .click({ force: true, multiple: true });//get('[data-cy=filefield]')
 
@@ -55,8 +55,14 @@ describe("Go to the login page", () => {
         cy.get('[data-cy=BufferedRendererView]')
             .click()//.pause()
         cy.hash().should('eq', '#BufferedRendererView')
-        cy.get('[data-cy=load]').click()
-        cy.get('#tableview-1052').scrollTo('bottom')
+        cy.get('[data-cy=load]').click({ delay: 1500 }).wait(2000);
+        cy.get('[data-cy=BufferedRendererGrid]').within(() => {
+            cy.get('.x-grid-body').within(() => { cy.get('.x-scroller').scrollTo('bottom') });
+        });
+        cy.get('[data-cy=ColumnLockingViewId]')
+        .click()//.pause()
+    cy.hash().should('eq', '#BufferedRendererView')
+        
 
     });
     // it('cy.viewport() - set the viewport size and dimension', () => {

@@ -1,7 +1,7 @@
 Ext.define("CreateExtJsApp.view.formFields.FormFields", {
 	extend: 'Ext.Container',
 	xtype: 'formFieldsview',
-	height: '100%',
+	layout: 'fit',
 	items: [{
 		xtype: 'form',
 		frame: true,
