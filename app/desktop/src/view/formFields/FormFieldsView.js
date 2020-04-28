@@ -104,12 +104,41 @@ Ext.define("CreateExtJsApp.view.formFields.FormFields", {
 				allowBlank: false
 			}, {
 				xtype: 'datefield',
+				id: 'demoEndDate',
 				name: 'endDate',
 				fieldLabel: 'End',
 				inputAttrTpl: 'data-cy=endDate',
 				padding: '0 0 0 10',
 				allowBlank: false
 			}]
+		}, {
+			xtype: 'combo',
+			fieldLabel: 'Combobox',
+			inputAttrTpl: 'data-cy=combobox',
+			name: 'Combobox',
+			queryMode: 'local',
+			anchor: '100%',
+			store: Ext.create('Ext.data.Store', {
+				fields: ['value', 'display'],
+				data: [
+					{
+						"display": "Cypress",
+						"value": 1
+					},
+					{
+						"display": "E2E Testing",
+						"value": 0
+					},
+					{
+						"display": "ExtJS",
+						"value": 2
+					}
+				]
+			}),
+			displayField: 'display',
+			valueField: 'value',
+			autoSelect: true,
+			forceSelection: true
 		},
 			/* {
 				xtype: 'fieldset',

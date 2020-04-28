@@ -37,9 +37,17 @@ describe("Go to the login page", () => {
         cy.get('li').last();
         cy.get('.x-form-time-trigger').click({ delay: 500 });
         cy.get('li').first();
-        cy.get('[data-cy=email]').click({ delay: 500 })
-        cy.get('[data-cy=startDate]').click({ delay: 500 })
-        cy.get('[data-cy=endDate]').click({ delay: 500 })
+        cy.get('[data-cy=email]').click({ delay: 500 }).type('akir.oussama').clear({ delay: 300 }).type('akir.oussama@gmail.com');
+        cy.get('[data-cy=startDate]').click({ delay: 500 }).type('28/04/2020')
+        cy.get('#demoEndDate').within(() => {
+            cy.get('.x-form-date-trigger').click({ delay: 500 })
+        });
+        cy.get('#demoEndDate-picker-nextEl').click();
+        cy.get('.x-datepicker-date').contains('29').click({ force: true });
+        cy.get('[data-cy=combobox]').click({ delay: 500 }).type('Cy')//.should("have.value", "Cypress");;
+        cy.get('.x-boundlist-item').contains('Cypress').click();
+        cy.get('.x-form-arrow-trigger').click();
+        cy.get('.x-boundlist-item').contains('ExtJS').click();
         // cy.contains('Browse...').should('be.visible')
         //     .click({ force: true, multiple: true });//get('[data-cy=filefield]')
 
@@ -48,7 +56,7 @@ describe("Go to the login page", () => {
             .click()//.pause()
         cy.hash().should('eq', '#BufferedRendererView')
         cy.get('[data-cy=load]').click()
-        // cy.get('#gridpanel-1048-body').get('  x-grid-row').scrollTo('bottom')
+        cy.get('#tableview-1052').scrollTo('bottom')
 
     });
     // it('cy.viewport() - set the viewport size and dimension', () => {
