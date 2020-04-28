@@ -24,7 +24,7 @@ Ext.define("CreateExtJsApp.store.WidgetsStore", {
                 return sequence;
             };
 
-        for (i = 0; i < 8; i++) {
+        for (i = 0; i < 18; i++) {
             result.push([
                 i + 1,
                 Ext.Number.randomInt(0, 100) / 100,

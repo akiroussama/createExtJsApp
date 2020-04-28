@@ -74,7 +74,7 @@ Ext.define("CreateExtJsApp.view.grid.ColumnWidgetsView", {
             {
                 text: "Progress",
                 xtype: "widgetcolumn",
-                width: 120,
+                flex: 1,
                 dataIndex: "progress",
                 widget: {
                     xtype: "progressbarwidget",
@@ -85,7 +85,7 @@ Ext.define("CreateExtJsApp.view.grid.ColumnWidgetsView", {
             },
             {
                 text: "Run Mode",
-                width: 150,
+                flex: 1.2,
                 xtype: "widgetcolumn",
                 widget: {
                     xtype: "combo",
@@ -104,7 +104,7 @@ Ext.define("CreateExtJsApp.view.grid.ColumnWidgetsView", {
             //},
             {
                 text: "Bar",
-                width: 100,
+                flex: 1,
                 dataIndex: "sequence2",
                 xtype: "widgetcolumn",
                 widget: {
@@ -122,7 +122,7 @@ Ext.define("CreateExtJsApp.view.grid.ColumnWidgetsView", {
             // },
             {
                 text: "Bullet",
-                width: 100,
+                flex: 1,
                 dataIndex: "sequence4",
                 xtype: "widgetcolumn",
                 widget: {
@@ -131,7 +131,7 @@ Ext.define("CreateExtJsApp.view.grid.ColumnWidgetsView", {
             },
             {
                 text: "Pie",
-                width: 60,
+                flex: 0.5,
                 dataIndex: "sequence5",
                 xtype: "widgetcolumn",
                 widget: {
@@ -140,7 +140,7 @@ Ext.define("CreateExtJsApp.view.grid.ColumnWidgetsView", {
             },
             {
                 text: "Box",
-                width: 100,
+                flex: 1,
                 dataIndex: "sequence6",
                 xtype: "widgetcolumn",
                 widget: {
@@ -149,7 +149,7 @@ Ext.define("CreateExtJsApp.view.grid.ColumnWidgetsView", {
             },
             {
                 text: "TriState",
-                width: 100,
+                flex: 1,
                 dataIndex: "sequence7",
                 xtype: "widgetcolumn",
                 widget: {
