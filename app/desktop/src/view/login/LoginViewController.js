@@ -13,7 +13,8 @@ Ext.define('neverWalkAlone.view.login.LoginViewController', {
 					if (response.valid == true) {
 						Ext.Msg.alert('Login Success', 'You have been logged in!')
 						localStorage.setItem("LoggedIn", true)
-						me.getView().destroy()
+						me.getView().destroy();
+						location.href = "#homeview";
 						window.location.reload();
 					}
 					else {
@@ -23,7 +24,8 @@ Ext.define('neverWalkAlone.view.login.LoginViewController', {
 					// should be error here, but just for the example it will pass
 					Ext.Msg.alert('Login Success', 'You have been logged in!')
 					localStorage.setItem("LoggedIn", true)
-					me.getView().destroy()
+					me.getView().destroy();
+					location.href = "#homeview";
 					window.location.reload();
 				})
 		} else {

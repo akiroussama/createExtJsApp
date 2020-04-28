@@ -12,6 +12,7 @@ Ext.define("CreateExtJsApp.view.grid.DragAndDropView", {
     {
       xtype: 'grid',
       reference: 'grid',
+      cyId: 'DragAndDropViewGrid',
       title: 'Grid',
       height: 400,
       enableDragDrop: true,

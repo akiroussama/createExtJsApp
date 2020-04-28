@@ -1,7 +1,7 @@
 Ext.define("CreateExtJsApp.Application", {
   extend: 'Ext.app.Application',
   name: 'CreateExtJsApp',
-  requires: ['CreateExtJsApp.*'],
+  requires: ['CreateExtJsApp.*', "CreateExtJsApp.util.Shared"],
   defaultToken: 'homeview',
 
   launch: function () {
@@ -12,7 +12,7 @@ Ext.define("CreateExtJsApp.Application", {
     elem.parentNode.removeChild(elem)
     var whichView = 'mainview';
     var loggedIn = localStorage.getItem("LoggedIn");
-    if (loggedIn != 'true') { whichView = 'loginview' }
+    if (loggedIn != 'true') { whichView = 'loginview'; }
     Ext.create({ xtype: whichView, plugins: 'viewport' })
   },
 

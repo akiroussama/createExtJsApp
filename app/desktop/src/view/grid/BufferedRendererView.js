@@ -99,6 +99,7 @@ Ext.define("CreateExtJsApp.view.grid.BufferedRendererView", {
         //console.log('bufferedSetting is: ' + bufferedSetting)
         return {
             xtype: "grid",
+            cyId: "BufferedRendererGrid",
             //bufferedRenderer: bufferedSetting,
             //store: { type: `${this.testname}-store` },
             store: Ext.create(
